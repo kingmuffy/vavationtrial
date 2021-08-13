@@ -1,5 +1,4 @@
 import mongoose from 'mongoose'
-import { boolean } from 'yargs'
 
 const userSchema = mongoose.Schema(
   {
@@ -18,7 +17,7 @@ const userSchema = mongoose.Schema(
       required: true,
     },
     isAdmin: {
-      type: boolean,
+      type: Boolean,
       required: true,
       default: false,
     },
